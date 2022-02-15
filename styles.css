@@ -1,30 +1,190 @@
-/* Import font  */
+/* font import */
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
 
+/* Variables */
+
 :root {
-  --pale-blue: hsl(225, 100%, 94%);
-  --bright-blue: hsl(245, 75%, 52%);
-  --very-pale-blue: hsl(225, 100%, 98%);
-  --desaturated-blue: hsl(224, 23%, 55%);
-  --dark-blue: hsl(223, 47%, 23%);
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+  --main-font: "Red Hat Display", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: "Red Hat Display", sans-serif;
-  background-image: url(/images/pattern-background-desktop.svg);
+  font-family: var(--main-font);
+  font-size: 15px;
+  background-image: url("/images/pattern-background-desktop.svg");
   background-repeat: no-repeat;
   background-position: top right;
   background-size: 100%;
-  background-color: var(--pale-blue);
+  background-color: var(--Pale-blue);
 }
 
+h1 {
+  font-size: 1.7em;
+  font-weight: 700;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  color: var(--Dark-blue);
+}
+
+H4 {
+  color: var(--Dark-blue);
+  font-weight: 900;
+  text-align: left;
+  margin-left: 15px;
+  font-size: 14px;
+}
+
+span {
+  font-size: 14px;
+  color: var(--Desaturated-blue);
+  font-weight: 400;
+}
 p {
-  font-size: 16px;
+  color: var(--Desaturated-blue);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 .main-container {
-  background-color: white;
   width: 80%;
   max-width: 21rem;
   margin: 0 auto;
+  background-color: #fff;
+  margin-top: 5rem;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px var(--Pale-blue);
+}
+
+/** Container Image **/
+.container-image {
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  max-width: 21rem;
+  height: auto;
+  border-radius: 10px 10px 0px 0px;
+  overflow: hidden;
+}
+
+.image-new {
+  background-image: url("/images/illustration-hero.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+  min-height: 10rem;
+  width: 100%;
+}
+
+.info {
+  padding: 1.7em 1.5em;
+  text-align: center;
+}
+
+.subscription {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--Very-pale-blue);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 12px;
+}
+
+.subscription img {
+  width: 100%;
+  max-width: 2.5em;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+}
+
+.subscription a {
+  color: var(--Bright-blue);
+  font-size: 14px;
+  text-align: right;
+  text-decoration: underline;
+}
+
+.subscription a:hover {
+  color: var(--Bright-blue);
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.btn {
+  border-radius: 8px;
+  padding: 0.7rem;
+  margin: 0 1rem;
+}
+
+.btn-proceed {
+  background-color: var(--Bright-blue);
+  color: #fff;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.btn-proceed:hover {
+  background-color: var(--Bright-blue);
+  opacity: 0.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-cancel {
+  font-size: 13px;
+  border-radius: none;
+  color: var(--Desaturated-blue);
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.btn-cancel:hover {
+  color: var(--Dark-blue);
+  font-weight: 500;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 600px) {
+  /** Main Container **/
+  .main-container {
+    margin-top: 3rem;
+  }
+
+  .info {
+    padding: 1.7em 1.9em;
+  }
+
+  .subscription {
+    margin: 1rem 0.2rem;
+  }
+
+  .btn {
+    margin: 0 0.3rem;
+  }
+}
+/* Attribution section */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
