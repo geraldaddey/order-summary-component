@@ -1,0 +1,45 @@
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --dark-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+  background-color: var(--desaturated-blue);
+  width: 1440px;
+}
+
+.container {
+  background-color: white;
+  width: 350px;
+  margin: 0 auto;
+  border-radius: 0.625rem;
+  position: relative;
+  top: -150px;
+}
+
+img {
+  width: inherit;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+span {
+  display: block;
+  background-color: gray;
+  padding: 10px;
+}
+
+.button {
+  color: var(--dark-blue);
+  background-color: #4caf50; /* Green */
+  border-radius: 15px;
+
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+}
