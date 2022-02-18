@@ -70,6 +70,7 @@ div.cost {
 .cost > span:hover {
   cursor: pointer;
   text-decoration: none;
+  opacity: 0.7;
 }
 
 .price {
@@ -110,12 +111,12 @@ div.cost {
 
 .payment button:hover {
   cursor: pointer;
-  background-color: var(--bright-blue);
+  opacity: 0.7;
 }
 
 .payment span {
   display: block;
-  margin-top: 1rem;
+  margin-top: 10px;
   padding: 1rem;
   color: var(--dark-blue);
 }
@@ -126,6 +127,9 @@ div.cost {
 }
 
 .attribution {
+  position: absolute;
+  top: 100%;
+  left: 40%;
   font-size: 11px;
   text-align: center;
 }
