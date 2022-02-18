@@ -8,6 +8,35 @@
 
 body {
   font-family: "Red Hat Display", sans-serif;
+  background-image: url(/images/pattern-background-desktop.svg);
+  width: 100%;
+  max-width: 100%;
+}
+
+/* .container {
+  height: 200px;
+  position: relative;
+} */
+
+.card-container {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 350px;
+  border-radius: 15px;
+}
+
+.hero-container {
+  border-radius: inherit;
+}
+
+.hero-container img {
+  width: 100%;
+  border-radius: inherit;
 }
 
 .attribution {
