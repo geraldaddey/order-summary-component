@@ -8,9 +8,36 @@
 
 body {
   font-family: "Red Hat Display", sans-serif;
+  background-color: var(--desaturated-blue);
+}
+.container {
+  /* display: relative; */
+  top: 50%;
+  left: 50%;
+  transform: translateY(50%);
+  margin: 0 auto;
+  width: 350px;
+  /* height: 500px; */
+  border-radius: 15px;
+  background-color: white;
 }
 
-.attribution {
+.hero {
+  border-radius: 15px;
+}
+
+.hero img {
+  max-width: 100%;
+  border-radius: inherit;
+  border-bottom-right-radius: initial;
+  border-bottom-left-radius: initial;
+}
+
+.order {
+  text-align: center;
+}
+
+. .attribution {
   font-size: 11px;
   text-align: center;
 }
