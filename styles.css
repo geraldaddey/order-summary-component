@@ -1,7 +1,7 @@
 :root {
   --very-pale-blue: hsl(225, 100%, 98%);
   --desaturated-blue: hsl(224, 23%, 55%);
-  --dark-blue: hsl(223, 47%, 23%);
+  --dark-blue: rgb(31, 47, 86);
   --pale-blue: hsl(225, 100%, 94%);
   --bright-blue: hsl(245, 75%, 52%);
 }
@@ -101,7 +101,7 @@ div.cost {
 
 .payment button {
   background-color: var(--bright-blue);
-  box-shadow: 0px 5px 10px var(--dark-blue);
+  box-shadow: 0px 5px 10px rgba(31, 47, 86, 0.5);
   border: none;
   width: 90%;
   height: 40px;
